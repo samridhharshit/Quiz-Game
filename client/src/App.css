@@ -19,6 +19,10 @@ a > h2:hover {
   padding: 2rem 0;
 }
 
+.header {
+    margin-bottom: 3rem;
+}
+
 /*.signin {*/
 /*  position: fixed;*/
 /*  right: 1%;*/
@@ -27,7 +31,7 @@ a > h2:hover {
 
 .signin-overlay {
   background-color: antiquewhite;
-  padding: 7rem;
+  padding: 3rem 7rem 7rem 7rem;
 
 }
 

@@ -50,6 +50,13 @@ class SignIn extends React.Component {
         return (
             <div className='container-fluid signin-overlay'>
                 <div className="row">
+                    <div className="col-sm-12">
+                        <div className="header">
+                            <h1>The Quiz Game</h1>
+                        </div>
+                    </div>
+                </div>
+                <div className="row">
                     <div className="col"></div>
                     <div className={`col-lg-5 col-md-6 col-sm-8 ${!this.state.display}`}>
                         <Form onSubmit={this.handleSignIn} className={`signin ${this.state.class}`}>
