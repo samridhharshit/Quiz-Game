@@ -77,9 +77,9 @@ class SignIn extends React.Component {
                 <div className={`row`}>
                     <div className="col"></div>
                     <div className={`col-lg-6 col-md-8 col-sm-10 ${this.state.display} message`}>
-                        <h2>Open the email with which you Registered right now.</h2>
+                        <h2>Please find invite link in registered email inbox.</h2>
                         <h3>Thank You!</h3>
-                        <h4 style={{textAlign:"center"}}>*please check your spam if you did receive the mail</h4>
+                        <h4 style={{textAlign:"center"}}>Please check your spam folder, if you cannot find the mail.</h4>
                     </div>
                     <div className="col"></div>
                 </div>

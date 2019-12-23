@@ -68,14 +68,16 @@ app.post('/signin', (req, res) => {
         // console.log(data);
     });
 
-    const link = `http://localhost:5000/home?q=${data.token}`
+    var url = process.env.URL;
+
+    const link = `http://${url}:5000/home?q=${data.token}`
 
     const msg = {
         to: `${req.body.email}`,
         from: 'some66819@gmail.com',
         subject: 'Verify Your account for playing the Quiz Game!',
         text: `access mail`,
-        html: `open this link: ${link} .Now you can access the game anytime from here!`
+        html: `Open this link: ${link}. Now you can access the game anytime from here!`
     };
     console.log(msg);
     sgMail.send(msg)
