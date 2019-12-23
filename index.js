@@ -88,16 +88,20 @@ app.post('/signin', (req, res) => {
 app.get(`/home`, (req, res) => {
     //receiving query parameter from the route
     const query = req.query.q;
+
+    var url = process.env.URL;
+    console.log(`http://${url}:3000/resignin`);
+
     //checking in db if the token exsts
     let db = mongoUtil.getDb();
     db.collection('credentials').find({token: query}).toArray((err, data) => {
         if (err) {throw err;}
         else if (data === null || data.length === 0) {
             console.log('record not found')
-            res.redirect('http://localhost:3000/resignin');
+            res.redirect(`http://${url}:3000/resignin`);
         } else {
             console.log(data);
-            res.redirect('http://localhost:3000/signin');
+            res.redirect(`http://${url}:3000/signin`);
         }
     })
 })

@@ -15,8 +15,10 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "nodemon index.js",
-    "heroku-postbuild": "cd client && npm install && npm start"
+    "start": "node index.js",
+    "server": "nodemon  index.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "Samridh Harshit",
   "license": "ISC"
