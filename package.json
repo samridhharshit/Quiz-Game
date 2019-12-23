@@ -15,10 +15,10 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node index.js",
+    "dev": "node index.js",
     "server": "nodemon  index.js",
     "client": "cd client && npm start",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "start": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "Samridh Harshit",
   "license": "ISC"
