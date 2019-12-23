@@ -1,0 +1,131 @@
+/*body {*/
+/*  background-color: beige;*/
+/*}*/
+
+.App {
+  text-align: center;
+}
+
+a > h2 {
+  color: #4ca973;
+  text-decoration: none;
+}
+
+a > h2:hover {
+  color: whitesmoke;
+}
+
+.header, .options {
+  padding: 2rem 0;
+}
+
+/*.signin {*/
+/*  position: fixed;*/
+/*  right: 1%;*/
+/*  top: 1%;*/
+/*}*/
+
+.signin-overlay {
+  background-color: antiquewhite;
+  padding: 7rem;
+
+}
+
+.form-row {
+  flex-direction: column;
+}
+
+.cont {
+  display: block;
+  margin: auto;
+}
+
+.options {
+  margin: 7rem 0;
+}
+
+.options-row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+button.buttons h2 {
+  margin: 0;
+}
+
+.timer {
+  position: fixed;
+  right: 10%;
+  top: 10%;
+}
+
+.easyquestions {
+padding: 1.5rem 0;
+overflow-x: hidden;
+}
+
+.question-container {
+  padding: 1rem 2rem;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.question {
+  display: flex;
+}
+
+h4 {
+  text-align: left;
+}
+
+.answer-options {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+label {
+  padding: 0 0.5rem;
+}
+
+.easyquestions, .moderatequestions,.hardquestions {
+  overflow-x: hidden;
+}
+
+button.btn {
+
+  margin: 1.5rem 0;
+}
+
+.hidden, .true {
+  display: none;
+}
+
+.navigation-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: beige;
+}
+
+.displayNone {
+  align-items: center;
+}
+
+.navigation-container > a {
+  text-decoration: none;
+}
+
+@media(max-width: 758px) {
+  .options-container {
+    padding: 1rem 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .navigation-container {
+    flex-direction: column;
+  }
+}
+
